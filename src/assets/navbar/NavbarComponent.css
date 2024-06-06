@@ -1,0 +1,63 @@
+.logo {
+  background-color: #F0B872;
+  border-radius: 20px;
+  color: black !important;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-family: 'Gotham', sans-serif;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-item a {
+  color: black !important;
+  font-weight: bold;
+  font-family: 'Gotham', sans-serif; /* Aplica a fonte Gotham */
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Gotham', sans-serif; /* Aplica a fonte Gotham */
+}
+
+.navbar {
+  padding: 1rem 2rem; /* Ajusta o padding da navbar */
+}
+
+.navbar-background {
+  /* background-color: #FEFAE0;
+  opacity: 0.2; */
+  background-image: linear-gradient(to right, #FE5C56, #FEA56B);
+}
+
+.nav-item {
+  flex: 1; /* Faz com que cada item ocupe o mesmo espaço */
+  text-align: center; /* Centraliza o texto de cada item */
+}
+
+.nav-item a {
+  padding: 0.5rem 1rem; /* Ajusta o padding dos links */
+  display: flex; /* Usa flexbox para centralizar itens verticalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.nav-item a i {
+  margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto */
+  font-size: 1rem; /* Define o tamanho do ícone */
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .nav-item {
+      width: 100%;
+      text-align: left;
+  }
+}

@@ -1,0 +1,14 @@
+.App {
+    background: linear-gradient(90deg, #FF3131, #FF914D); /* Degradê de #FF3131 até #FF914D */
+    min-height: 100vh; /* Garante que o fundo cubra toda a altura da janela */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Ajusta a posição do conteúdo da página */
+  .container-fluid {
+    flex: 1; /* Permite que o conteúdo expanda para preencher o espaço disponível */
+    padding-left: 0;
+    padding-right: 0;
+  }
+  

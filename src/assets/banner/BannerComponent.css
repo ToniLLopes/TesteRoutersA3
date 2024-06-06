@@ -1,0 +1,67 @@
+.container-fluid.degrade {
+  position: relative;
+  background: linear-gradient(90deg, #FF3131 0%, #FF914D 100%);
+}
+
+.banner-content {
+  font-family: 'Gotham', sans-serif;
+  color: #F8F0E2;
+}
+
+.banner-content h1 {
+  font-weight: bold;
+}
+
+.btn-custom {
+  background-color: #F0B872 !important;
+  border-radius: 20px;
+  border: none;
+  
+}
+
+.btn-custom:hover {
+  background-color: #d99b62 !important;
+}
+
+.background-coresfundo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  background: url('../../assets/banner/coresFundo.svg') no-repeat;
+  background-size: cover;
+  z-index: 0; /* Assegura que o SVG está abaixo das outras imagens */
+}
+
+@media (max-width: 767px) {
+  .background-coresfundo {
+    display: none; /* Esconder a imagem de fundo em telas pequenas */
+  }
+
+  .banner-content h1 img {
+    max-width: 20%;
+  }
+
+  .banner-content h1 {
+    font-size: 1.5rem; /* Diminuir o tamanho da fonte para telas menores */
+  }
+
+  .col-md-6 img {
+    max-width: 100%;
+  }
+
+  .col-md-6 {
+    text-align: center; /* Centralizar o conteúdo em telas pequenas */
+  }
+
+  .row {
+    flex-direction: column; /* Colocar os elementos em coluna para telas pequenas */
+    align-items: center;
+  }
+
+  .btn-custom {
+    font-size: 0.875rem; /* Diminuir o tamanho do botão para telas menores */
+  }
+}
